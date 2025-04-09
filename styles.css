@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+.login-form {
+    background-color: black;
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+    color: white;
+    width: 100%;
+    max-width: 400px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    font-size: 14px;
+    margin-bottom: 1.5rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+label {
+    text-align: left;
+    font-size: 14px;
+}
+
+input[type="email"],
+input[type="password"] {
+    padding: 0.75rem;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    background-color: #333;
+    color: black;
+    width: 100%;
+    color: #fff;
+}
+
+input::placeholder {
+    color: #bbb;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.login-btn,
+.forgot-btn {
+    padding: 0.75rem;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    color: black;
+    background-color: white;
+}
+
+.login-btn:hover,
+.forgot-btn:hover {
+    background-color: #f1f1f1;
+}
+
+/* Responsive Design for Tablets and Phones */
+@media (max-width: 768px) {
+    .login-form {
+        width: 100%;
+        padding: 1.5rem;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    input[type="email"],
+    input[type="password"] {
+        font-size: 14px;
+        padding: 0.65rem;
+    }
+
+    .login-btn,
+    .forgot-btn {
+        font-size: 14px;
+        padding: 0.65rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .login-form {
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    input[type="email"],
+    input[type="password"] {
+        font-size: 12px;
+        padding: 0.55rem;
+    }
+
+    .login-btn,
+    .forgot-btn {
+        font-size: 12px;
+        padding: 0.55rem;
+    }
+}
